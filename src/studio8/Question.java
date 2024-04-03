@@ -6,7 +6,7 @@ public class Question {
 	private int points;
 	
 	public Question(String prompt, String answer, int points) {
-		this.prompt = prompt;
+		this.prompt=prompt;
 		this.answer = answer;
 		this.points = points;
 	}
@@ -37,4 +37,9 @@ public class Question {
 		System.out.println(q.checkAnswer("hi"));
 		System.out.println(q.checkAnswer("8"));
 	}
+	
+	public String getPrompt() {
+		return this.prompt;
+	}
+
 }
